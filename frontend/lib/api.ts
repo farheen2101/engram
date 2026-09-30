@@ -3,7 +3,7 @@ import type {
   Id, Me, MemoryResponse, OnboardingPayload, Outcome,
 } from "./types";
 
-const BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const BASE = process.env.NEXT_PUBLIC_API_URL || "https://engram-api-srkb.onrender.com";
 const KEY = "engram_token";
 
 export const getToken = () => (typeof window === "undefined" ? null : localStorage.getItem(KEY));
